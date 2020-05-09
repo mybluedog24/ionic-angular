@@ -42,7 +42,7 @@ var IOSTransition = (function (_super) {
             var enteringPageEle = enteringView.pageRef().nativeElement;
             // entering content
             var enteringContent = new Animation(plt, enteringView.contentRef());
-            enteringContent.element(enteringPageEle.querySelectorAll('ion-header > *:not(ion-navbar),ion-footer > *'));
+            enteringContent.element(enteringPageEle.querySelectorAll('ion-header > *:not(ion-navbar),ion-footer'));
             this.add(enteringContent);
             if (backDirection) {
                 // entering content, back direction
@@ -109,7 +109,7 @@ var IOSTransition = (function (_super) {
             // leaving content
             var leavingPageEle = leavingView.pageRef().nativeElement;
             var leavingContent = new Animation(plt, leavingView.contentRef());
-            leavingContent.element(leavingPageEle.querySelectorAll('ion-header > *:not(ion-navbar),ion-footer > *'));
+            leavingContent.element(leavingPageEle.querySelectorAll('ion-header > *:not(ion-navbar),ion-footer'));
             this.add(leavingContent);
             if (backDirection) {
                 // leaving content, back direction
