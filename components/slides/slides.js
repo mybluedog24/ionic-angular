@@ -782,9 +782,10 @@ var Slides = (function (_super) {
      */
     Slides.prototype.ngAfterContentInit = function () {
         var _this = this;
-        this._plt.timeout(function () {
-            _this._initSlides();
-        }, 300);
+        // this._plt.timeout(function () {
+        //     _this._initSlides();
+        // }, 300);
+        _this._initSlides();
     };
     /**
      * Update the underlying slider implementation. Call this if you've added or removed
